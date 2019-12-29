@@ -26,8 +26,6 @@ auth =(()=>{
 	}
 	
 	let setContentView =x=>{
-		$('head')
-		.html(auth_vue.auth_head())
 		if( x === 'join' ){
 			join_1_page()
 			join_2_page_btn()
@@ -40,7 +38,7 @@ auth =(()=>{
 		
 	}
 	let login_page =()=>{
-		$('body')
+		$('#root')
 		.html(auth_vue.login_body())
 		
 		$(auth_vue.login())
@@ -75,9 +73,7 @@ auth =(()=>{
 				contentType : 'application/json',
 				success : d=>{
 					if(d.msg === 'SUCCESS'){
-						alert('로그인 성공')
-						alert(d.msg)
-						alert(d.cus.cemail)
+						mypage.onCreate()
 					}
 					else{
 						alert('로그인 실패')
@@ -91,7 +87,7 @@ auth =(()=>{
 	}
 	
 	let join_1_page =()=>{
-		$('body')
+		$('#root')
 		.html(auth_vue.login_body())
 		
 		$(auth_vue.join_1())
@@ -105,7 +101,7 @@ auth =(()=>{
 		  '</button>')
 		.prependTo('.buttons')
 		.click(()=>{
-			$('body')
+			$('#root')
 			.html(auth_vue.join_body())
 			
 			$(auth_vue.join_2())
