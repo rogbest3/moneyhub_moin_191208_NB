@@ -107,6 +107,54 @@ auth =(()=>{
 			$(auth_vue.join_2())
 			.appendTo('.themoin-signup')
 			
+			
+			$('#agree_box_all')
+				.click(function(){
+					if($(this).children('div').hasClass("checked") == true){
+						$('#agree_box_all div.box').attr('class', 'box')
+			        	$('#agree_box_1 div.box').attr('class', 'box')
+			        	$('#agree_box_2 div.box').attr('class', 'box')
+			        	$('#agree_box_3 div.box').attr('class', 'box')
+					}
+			        else{
+
+			        	$('#agree_box_all div.box').attr('class', 'box checked')
+			        	$('#agree_box_1 div.box').attr('class', 'box checked')
+			        	$('#agree_box_2 div.box').attr('class', 'box checked')
+			        	$('#agree_box_3 div.box').attr('class', 'box checked')
+			        }
+				})
+			$.each(['1', '2', '3'], (i, j)=>{
+				$('#agree_box_' + j)
+				.click(function(){
+					if($(this).children('div').hasClass("checked") == true){
+						$('#agree_box_'+ j +' div.box').attr('class', 'box')
+					}
+			        else{
+			        	$('#agree_box_'+ j +' div.box').attr('class', 'box checked')
+			        	
+			        }
+				})
+			})
+			
+			$('#code_dropdown')
+			.click(function(){
+				$(this).attr('class', 'moin-input-group moin-dropdown open')
+				$('ul.dropdown-menu').toggle()
+			})
+			
+			$('#code_dropdown .dropdown-toggle')
+			.text('+82 (South Korea)')
+			.append('<img class="pull-right" src="https://img.themoin.com/public/img/ic-dropdown-p.png">')
+			
+			$('ul.dropdown-menu li a')
+			.click(function(){
+				$('#code_dropdown .dropdown-toggle')
+				.text($(this).text())
+				.append('<img class="pull-right" src="https://img.themoin.com/public/img/ic-dropdown-p.png">')
+				
+			})
+			
 			join()
 		})
 	}
