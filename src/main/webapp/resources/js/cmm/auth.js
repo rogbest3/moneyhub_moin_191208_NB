@@ -2,11 +2,12 @@
 var auth = auth || {}
 auth =(()=>{
 	const WHEN_ERR = 'js파일을 찾지 못했습니다.'
-	let _, js, auth_vue_js, cookie_js
+	let _, js, img, auth_vue_js, cookie_js
 	
 	let init =()=>{
 		_ = $.ctx()
 		js = $.js()
+		img = $.img()
 		auth_vue_js = js + '/vue/auth_vue.js'
 		cookie_js = js + '/cmm/cookie.js'
 	}
@@ -39,7 +40,7 @@ auth =(()=>{
 	}
 	let login_page =()=>{
 		$('#root')
-		.html(auth_vue.login_body())
+		.html(auth_vue.login_body(_))
 		
 		$(auth_vue.login())
 		.appendTo('.themoin-login')
@@ -88,7 +89,7 @@ auth =(()=>{
 	
 	let join_1_page =()=>{
 		$('#root')
-		.html(auth_vue.login_body())
+		.html(auth_vue.login_body(_))
 		
 		$(auth_vue.join_1())
 		.appendTo('.themoin-login')
@@ -102,7 +103,7 @@ auth =(()=>{
 		.prependTo('.buttons')
 		.click(()=>{
 			$('#root')
-			.html(auth_vue.join_body())
+			.html(auth_vue.join_body(_))
 			
 			$(auth_vue.join_2())
 			.appendTo('.themoin-signup')

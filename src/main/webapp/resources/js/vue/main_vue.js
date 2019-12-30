@@ -79,7 +79,7 @@ main_vue ={
 		'				</div>'+
 		'			</div>'+
 
-		'			<div class="form-calculator main">'+
+		'			<div id="remit_box" class="form-calculator main">'+
 		'				<div class="amount-row">'+
 		'					<div class="">'+
 		'						<p>내가 보내는 금액 (수수료 포함)</p>'+
@@ -100,7 +100,7 @@ main_vue ={
 		'						<h3>EUR</h3>'+
 		'					</div>'+
 		'				</div>'+
-		'				<button type="submit" class="index-send-btn moin-body">송금하기</button>'+
+//		'				<button type="submit" class="index-send-btn moin-body">송금하기</button>'+
 		'			</div>'+
 		'		</div>'+
 		'	</div>'+
@@ -557,7 +557,7 @@ main_vue ={
 		'					</div>'+
 		'				</div>'+
 		'			</div>'+
-		'			<div class="form-calculator main">'+
+		'			<div id="remit_box" class="form-calculator main">'+
 		'				<div class="amount-row">'+
 		'					<div class="">'+
 		'						<p>내가 보내는 금액 (수수료 포함)</p>'+
@@ -578,7 +578,7 @@ main_vue ={
 		'						<h3>EUR</h3>'+
 		'					</div>'+
 		'				</div>'+
-		'				<button type="submit" class="index-send-btn moin-body">송금하기</button>'+
+//		'				<button type="submit" class="index-send-btn moin-body">송금하기</button>'+
 		'			</div>'+
 		'		</div>'+
 		'	</div>'+

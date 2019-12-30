@@ -1,10 +1,11 @@
 var nav_vue = nav_vue || {}
 nav_vue = {
-	nav : ()=>{
+	nav : x=>{
 		return '<nav class="themoin-header">'+
 		'	<div>'+
 		'		<a class="logo">'+
-		'			<img src="https://img.themoin.com/public/img/img-new-moin-logo.svg">'+
+//		'			<img src="https://img.themoin.com/public/img/img-new-moin-logo.svg">'+
+		'			<img src="'+ x +'/resources/img/logo2.png" style="width : 68px; height : 60px">'+
 		'		</a>'+
 		'		<div class="spacer"></div>'+
 		'		<a class="menu">'+
@@ -52,10 +53,13 @@ nav_vue = {
 		'	</div>'+
 		'</nav>'
 	},
-	logined_nav : ()=>{
+	logined_nav : x=>{
 		return '<nav class="themoin-header">'+
 		'	<div>'+
-		'		<a class="logo"><img src="https://img.themoin.com/public/img/img-new-moin-logo.svg"></a>'+
+		'		<a class="logo">'+
+//		'			<img src="https://img.themoin.com/public/img/img-new-moin-logo.svg">'+
+		'			<img src="'+ x +'/resources/img/logo2.png" style="width : 68px; height : 60px">'+
+		'		</a>'+
 		'		<div class="spacer"></div>'+
 		'		<a class="menu">'+
 		'			<div class="line1"></div>'+

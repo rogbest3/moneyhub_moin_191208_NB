@@ -13,7 +13,20 @@
 	<script src="<%=application.getContextPath()%>/resources/js/vue/auth_vue.js"></script>
 	<script src="<%=application.getContextPath()%>/resources/js/cmm/cookie.js"></script>
 	<script src="<%=application.getContextPath()%>/resources/js/mypage/mypage.js"></script>
+	
 	<script src="<%=application.getContextPath()%>/resources/js/vue/mypage_vue.js"></script>
+	<script src="<%=application.getContextPath()%>/resources/js/cmm/compo.js"></script>
+	<script src="<%=application.getContextPath()%>/resources/js/vue/compo_vue.js"></script>
+	<script src="<%=application.getContextPath()%>/resources/js/cmm/event.js"></script>
+	<script src="<%=application.getContextPath()%>/resources/js/vue/event_vue.js"></script>
+	<script src="<%=application.getContextPath()%>/resources/js/cmm/faq.js"></script>
+	<script src="<%=application.getContextPath()%>/resources/js/vue/faq_vue.js"></script>
+	
+	<script src="<%=application.getContextPath()%>/resources/js/remit/foreignRemit.js"></script>
+	<script src="<%=application.getContextPath()%>/resources/js/remit/remit_vue.js"></script>
+	<script src="<%=application.getContextPath()%>/resources/js/remit/remit_dropdown.js"></script>
+	<script src="<%=application.getContextPath()%>/resources/js/remit/remit_popup.js"></script>
+	
 	<script src="<%=application.getContextPath()%>/resources/js/mypage/cus_info.js"></script>
 	<script src="<%=application.getContextPath()%>/resources/js/cmm/sidebar.js"></script>
 	<script src="<%=application.getContextPath()%>/resources/js/mypage/cus_info_chg.js"></script>

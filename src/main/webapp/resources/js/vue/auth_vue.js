@@ -1,10 +1,11 @@
 var auth_vue = auth_vue || {}
 auth_vue ={
-	login_body : ()=>{
+	login_body : x=>{
 		return '	<div class="themoin-login">'+
 		'				<div>'+
 		'					<div class="image-box">'+
-		'						<img src="https://img.themoin.com/public/img/moin-logo.svg">'+
+//		'						<img src="https://img.themoin.com/public/img/moin-logo.svg">'+ //style="width : 68px; height : 60px"
+		'						<img src="'+ x +'/resources/img/logo3.png" >'+
 		'					</div>'+
 		'				</div>'+
 		'			</div>'+
@@ -53,11 +54,12 @@ auth_vue ={
 		'					</div>'+
 		'			</div>'
 	},	
-	join_body : ()=>{
+	join_body : x=>{
 		return '	<div class="themoin-signup">'+
 		'				<div>'+
 		'					<div class="image-box">'+
-		'						<img src="https://img.themoin.com/public/img/moin-logo.svg">'+
+//		'						<img src="https://img.themoin.com/public/img/moin-logo.svg">'+
+		'						<img src="'+ x +'/resources/img/logo3.png" >'+
 		'					</div>'+
 		'				</div>'+
 		'			</div>'
